@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/articlesFragment">
+
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.mundo.newsapiclient.ArticlesFragment"
+        android:label="fragment_articles"
+        tools:layout="@layout/fragment_articles" >
+
+        <action
+            android:id="@+id/action_articlesFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.mundo.newsapiclient.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info">
+
+        <argument
+            android:name="selected_article"
+            app:argType="com.mundo.newsapiclient.data.model.Article" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedArticlesFragment"
+        android:name="com.mundo.newsapiclient.SavedArticlesFragment"
+        android:label="fragment_saved_articles"
+        tools:layout="@layout/fragment_saved_articles" >
+
+        <action
+            android:id="@+id/action_savedArticlesFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+</navigation>

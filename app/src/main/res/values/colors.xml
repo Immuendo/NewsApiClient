@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#A3ABB5</color>
+    <color name="list_item_bg">#1E416E</color>
+    <color name="maroon_red">#630b31</color>
+    <color name="purple_blue_300">#4a4cc7</color>
+    <color name="purple_400">#5A0E99</color>
+    <color name="purple_500">#440A73</color>
+    <color name="purple_700">#220539</color>
+    <color name="sand_brown">#995A0E</color>
+    <color name="grass_green">#4D990E</color>
+</resources>
